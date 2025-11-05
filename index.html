@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Driver Activity</title>
+    <!-- Link to your stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="addin-container">
+        <header>
+            <h2>Select Current Activity</h2>
+            <p id="error-message" class="error-hidden">Please select an activity.</p>
+        </header>
+        
+        <!-- The list of activities will be dynamically generated here -->
+        <ul id="activity-list" class="activity-list">
+            <!-- Example: <li>Loading</li> -->
+        </ul>
+        
+        <footer>
+            <button id="submit-button" class="submit-button">
+                Submit
+            </button>
+        </footer>
+    </div>
+    
+    <!-- 
+      Reference to the GeoTab Drive Add-In API.
+      This file is provided by GeoTab when your add-in is loaded inside the Drive app.
+      You MUST include this for your add-in to work.
+    -->
+    <script src="geotab.drive.js"></script>
+    
+    <!-- Link to your application logic -->
+    <script src="app.js"></script>
+</body>
+</html>
